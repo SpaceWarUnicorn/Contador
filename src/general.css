@@ -1,0 +1,180 @@
+html{
+  height: 100%;
+  width: 100%;
+
+}
+
+body {
+  background: url(../src/media/home.jpg) no-repeat center fixed;
+  background-size: 100% 100%;
+  font-family: 'Karla', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 0 0 30px 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: midnightblue;
+}
+
+div {
+  margin: 0;
+}
+
+/*--------------------------*/
+
+/*
+cuerpo
+*/
+
+/*---------------------------*/
+
+section {
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contador.container{
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 70px;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*--------------------------*/
+
+/*
+flechitas
+*/
+
+/*---------------------------*/
+
+.arrow.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+}
+
+.carrow {
+  height: 15px;
+  width: 15px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  box-shadow: -2px 2px 0 0 lightgray;
+}
+
+.carrow.left {
+  transform: rotate(45deg);
+}
+
+.carrow.right {
+  transform: rotate(225deg);
+}
+
+.carrow.left:hover {
+  height: 20px;
+  width: 20px;
+  box-shadow: -3px 3px 0 0 lightgray;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.carrow.right:hover {
+  height: 20px;
+  width: 20px;
+  box-shadow: -3px 3px 0 0 lightgray;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+/*--------------------------*/
+
+/*
+contador
+*/
+
+/*---------------------------*/
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+/*--------------------------*/
+
+/*
+  Responsive
+  */
+
+/*---------------------------
+
+@media only screen and (max-height: 600px) {
+  .container{
+    width: 475px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .container{
+    width: 375px;
+    height: 200px;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .container{
+    width: 275px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container{
+    width: 475px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container{
+    width: 475px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container{
+    width: 275px;
+  }
+}*/
