@@ -5,18 +5,24 @@
   const arrows = document.querySelectorAll('.carrow');
 
   let count = (whichArrow) => {
-      var contN = parseInt(cont.innerText);
-      if(whichArrow == 'right'){
-       contN++;
-     }else{
-       contN--;
-     }
-     return contN;
+
+    let contN = parseInt(cont.textContent);
+
+    let choice = () => {
+      if (whichArrow == 'right') {
+        return contN += 1;
+      } else {
+
+        return contN -= 1;
+      }
+    };
+
+    return choice();
   };
 
-  for (var i = 0; i< arrows.length; i++) {
+  for (let i = 0; i < arrows.length; i++) {
     arrows[i].addEventListener('click', (e) => {
-      cont.innerText = count( e.target.id);
+      cont.textContent = count(e.target.id);
     });
   }
 
